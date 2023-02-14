@@ -1,15 +1,11 @@
-import React, { memo } from 'react'
-
-
+import Navbar from "../../components/navbar/Navbar";
+import React, { memo } from "react";
 
 export const HomePage = memo(() => {
-
-
-
-    return (
-        <div>
-            HOLA MUNDO
-
-        </div>
-    )
-})
+  return (
+    <>
+      <Navbar />
+      <div>HOLA MUNDO</div>
+    </>
+  );
+});
