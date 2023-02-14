@@ -1,0 +1,23 @@
+
+/* start navbar top */
+
+.navbar-top-container {
+  background-color: var(--white-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-top-container img{
+    width: 150px;
+}
+
+
+/* end navbar top */
+
+/* start navbar bot */
+.navbar-bot-container {
+  background-color: var(--green-color-third);
+}
+
+/* end navbar bot */
