@@ -43,8 +43,15 @@ a .icon {
 /* end navbar top */
 
 /* start navbar bot */
-.navbar .navbar-bot-container {
+
+.navbar-bot-container .conatiner-button {
+  display: flex;
+  justify-content: center;
   background-color: var(--green-color-third);
 }
-
+@media only screen and (max-width: 500px) {
+  .navbar-bot-container .conatiner-button {
+    display: none;
+  }
+}
 /* end navbar bot */

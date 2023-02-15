@@ -51,14 +51,13 @@ const Navbar = () => {
         color="primary"
         className="navbar-bot-container"
       >
-        <Toolbar>
+        <Toolbar className="conatiner-button">
           <Button color="inherit">INICIO</Button>
           <Button color="inherit">PROYECTOS</Button>
           <Button color="inherit">CONVOCATORIAS</Button>
           <Button color="inherit">BLOG</Button>
           <Button color="inherit">CÓNOCENOS</Button>
           <Button color="inherit">CONTÁCTANOS</Button>
-          <Typography variant="h6"></Typography>
         </Toolbar>
       </AppBar>
     </header>
