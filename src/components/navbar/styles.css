@@ -10,11 +10,15 @@
   gap: 20px;
 }
 
-.navbar-top-container img {
+.navbar-top-container .LogoBioplan {
   width: 150px;
 }
-@media only screen and (max-width: 500px) {
+.img-logoBioplan .LogoBioplan {
+  width: 100px;
+}
+@media only screen and (max-width: 662px) {
   .navbar-top-container {
+    flex-direction: column;
     justify-content: center;
   }
 }
@@ -49,9 +53,21 @@ a .icon {
   justify-content: center;
   background-color: var(--green-color-third);
 }
-@media only screen and (max-width: 500px) {
-  .navbar-bot-container .conatiner-button {
+
+.navbar-bot-responsive{
+  display: none;
+}
+
+/* end navbar bot */
+
+
+/* estart navbar bot responsive */
+@media only screen and (max-width: 662px) {
+  .navbar-bot-container, .navbar-top-container{
     display: none;
   }
+  .navbar-bot-responsive{
+    display: flex;
+  }
 }
-/* end navbar bot */
+/* end navbar bot responsive*/
