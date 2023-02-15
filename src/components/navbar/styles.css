@@ -1,4 +1,3 @@
-
 /* start navbar top */
 
 .navbar-top-container {
@@ -6,17 +5,45 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px 22px;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-.navbar-top-container img{
-    width: 150px;
+.navbar-top-container img {
+  width: 150px;
+}
+@media only screen and (max-width: 500px) {
+  .navbar-top-container {
+    justify-content: center;
+  }
 }
 
+.navbar-top-container .container-icons {
+  display: flex;
+  align-items: center;
+}
+.container-icons .buttonStyle {
+  background-color: var(--orange-color);
+}
+.container-icons .buttonStyle:hover {
+  background-color: darkorange;
+}
+.container-icons .buttonStyle:focus {
+  background-color: darkorange;
+}
 
+.container-icons .icon {
+  margin-right: 15px;
+}
+
+a .icon {
+  width: 20px;
+}
 /* end navbar top */
 
 /* start navbar bot */
-.navbar-bot-container {
+.navbar .navbar-bot-container {
   background-color: var(--green-color-third);
 }
 
