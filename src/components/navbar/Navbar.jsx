@@ -22,10 +22,50 @@ import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
-import MailIcon from "@mui/icons-material/Mail";
+import HomeIcon from "@mui/icons-material/Home";
+import WorkOutlineIcon from "@mui/icons-material/WorkOutline";
+import ArticleIcon from "@mui/icons-material/Article";
+import InfoIcon from "@mui/icons-material/Info";
+import InboxIcon from "@mui/icons-material/Inbox";
+import CampaignIcon from "@mui/icons-material/Campaign";
 
 const drawerWidth = 240;
+
+const itemsTopNavbar = [
+  { text: "Inicio", icon: <HomeIcon /> },
+  { text: "Proyectos", icon: <WorkOutlineIcon /> },
+  { text: "Convocatorias", icon: <CampaignIcon /> },
+  { text: "Blog", icon: <ArticleIcon /> },
+  { text: "Conócenos", icon: <InfoIcon /> },
+  { text: "Contáctanos", icon: <InboxIcon /> },
+];
+
+const itemsBotNavbar = [
+  {
+    text: "Facebook",
+    icon: (
+      <a href="">
+        <img src={IconFacebook} alt="" className="icon" />
+      </a>
+    ),
+  },
+  {
+    text: "Instagram",
+    icon: (
+      <a href="">
+        <img src={IconInstagram} alt="" className="icon" />
+      </a>
+    ),
+  },
+  {
+    text: "Youtube",
+    icon: (
+      <a href="">
+        <img src={IconYoutube} alt="" className="icon" />
+      </a>
+    ),
+  },
+];
 
 const Main = styled("main", { shouldForwardProp: (prop) => prop !== "open" })(
   ({ theme, open }) => ({
@@ -133,11 +173,11 @@ const Navbar = () => {
         </AppBar>
       </div>
 
-      <div className="navbar-bot-responsive">
+      <div className="navbar-bot-responsive" >
         <Box sx={{ display: "flex" }}>
           <CssBaseline />
           <AppBar
-            position="absolute"
+            position="fixed"
             open={open}
             style={{ backgroundColor: "#136734" }}
           >
@@ -182,28 +222,21 @@ const Navbar = () => {
             </DrawerHeader>
             <Divider />
             <List>
-              {["Inicio", "Proyectos", "Convocatorias", "Blog", "Conócenos", "Contáctanos"].map(
-                (text, index) => (
-                  <ListItem key={text} disablePadding>
-                    <ListItemButton>
-                      <ListItemIcon>
-                        {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                      </ListItemIcon>
-                      <ListItemText primary={text} />
-                    </ListItemButton>
-                  </ListItem>
-                )
-              )}
+              {itemsTopNavbar.map((item) => (
+                <ListItem key={item.text} disablePadding>
+                  <ListItemButton>
+                    <ListItemIcon>{item.icon}</ListItemIcon>
+                    <ListItemText primary={item.text} />
+                  </ListItemButton>
+                </ListItem>
+              ))}
             </List>
             <Divider />
             <List>
-              {["All mail", "Trash", "Spam"].map((text, index) => (
-                <ListItem key={text} disablePadding>
+              {itemsBotNavbar.map((item) => (
+                <ListItem key={item.text} disablePadding>
                   <ListItemButton>
-                    <ListItemIcon>
-                      {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                    </ListItemIcon>
-                    <ListItemText primary={text} />
+                    <ListItemIcon>{item.icon}</ListItemIcon>
                   </ListItemButton>
                 </ListItem>
               ))}
