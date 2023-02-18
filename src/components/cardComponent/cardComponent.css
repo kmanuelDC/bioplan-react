@@ -1,0 +1,22 @@
+/* start card´s section */
+.section-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  background-color: var(--white-color);
+  gap: 22px;
+}
+
+/* end card´s section */
+
+/* start card´s section responsive */
+@media screen and (max-width: 662px) {
+  .section-cards {
+    display: flex;
+    justify-content: flex-end;
+    width: 100vw;
+  }
+}
+
+/* end card´s section responsive*/
