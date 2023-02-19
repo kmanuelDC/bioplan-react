@@ -20,6 +20,7 @@ const theme = createTheme({
         root: {
           backgroundColor: "var(--orange-color)",
           padding: "10px",
+          position:"relative"
         },
       },
     },
