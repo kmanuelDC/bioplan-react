@@ -6,8 +6,13 @@ export const HomePage = memo(() => {
   return (
     <>
       <Navbar />
-      <CardComponent />
-      <div>HOLA MUNDO</div>
+      <div>
+        <CardComponent />
+      </div>
+      <div>
+        <div>HOLA MUNDOoo</div>
+        <p>lorem</p>
+      </div>
     </>
   );
 });

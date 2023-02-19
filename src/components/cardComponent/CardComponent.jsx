@@ -4,9 +4,11 @@ import "./cardComponent.css";
 export default function CardComponent() {
   return (
     <section className="section-cards">
-      <CardPrimary descripcion="" fecha="" className="CardPrimary" />
-      <CardPrimary descripcion="" fecha="" className="CardPrimary" />
-      <CardPrimary descripcion="" fecha="" className="CardPrimary" />
+      <div className="card-container">
+        <CardPrimary descripcion="" fecha="" className="CardPrimary" />
+        <CardPrimary descripcion="" fecha="" className="CardPrimary" />
+        <CardPrimary descripcion="" fecha="" className="CardPrimary" />
+      </div>
     </section>
   );
 }
