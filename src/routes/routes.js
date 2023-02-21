@@ -1,29 +1,31 @@
-import { HomePage } from "../pages/home/HomePage";
-import { Proyectos } from "../pages/proyects/Proyects";
-import { Convocatorias } from "../pages/convocatories/Convocatories";
 import { createBrowserRouter } from "react-router-dom";
-import { Conocenos } from "../pages/knowUs/KnowUs";
-import { Contactanos } from "../pages/callUs/CallUs";
-import Navbar from "../components/navbar/Navbar";
-import { Blog } from "../pages/blog/Blog";
-import { Donar } from "../pages/donate/Donate";
+import {
+  Blog,
+  ContactUs,
+  Convocatories,
+  Donate,
+  Home,
+  KnowUs,
+  Projects,
+} from "../pages";
+import { Layout } from "../components";
 
-export const Router = createBrowserRouter([
+export const router = createBrowserRouter([
   {
     path: "/",
-    element: <Navbar />,
+    element: <Layout />,
     children: [
       {
-        index:true, // es lo mismo que decir path: "/",
-        element: <HomePage />,
+        index: true, // es lo mismo que decir path: "/",
+        element: <Home />,
       },
       {
         path: "/Proyectos",
-        element: <Proyectos />,
+        element: <Projects />,
       },
       {
         path: "/Convocatorias",
-        element: <Convocatorias />,
+        element: <Convocatories />,
       },
       {
         path: "/Blog",
@@ -31,15 +33,15 @@ export const Router = createBrowserRouter([
       },
       {
         path: "/Conocenos",
-        element: <Conocenos />,
+        element: <KnowUs />,
       },
       {
         path: "/Contactanos",
-        element: <Contactanos />,
+        element: <ContactUs />,
       },
       {
         path: "/Donar",
-        element: <Donar />,
+        element: <Donate />,
       },
     ],
   },

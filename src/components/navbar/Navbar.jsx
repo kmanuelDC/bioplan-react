@@ -28,7 +28,7 @@ import ArticleIcon from "@mui/icons-material/Article";
 import InfoIcon from "@mui/icons-material/Info";
 import InboxIcon from "@mui/icons-material/Inbox";
 import CampaignIcon from "@mui/icons-material/Campaign";
-import { Link as RouterLink, Outlet } from "react-router-dom";
+import { Link as RouterLink } from "react-router-dom";
 
 const drawerWidth = 240;
 
@@ -45,7 +45,7 @@ const itemsBotNavbar = [
   {
     text: "Facebook",
     icon: (
-      <a href="">
+      <a href="https://www.facebook.com/Bioplan.proyecta/?locale=es_LA">
         <img src={IconFacebook} alt="" className="icon" />
       </a>
     ),
@@ -53,7 +53,7 @@ const itemsBotNavbar = [
   {
     text: "Instagram",
     icon: (
-      <a href="">
+      <a href="https://www.instagram.com/bioplan.proyecta/?hl=es">
         <img src={IconInstagram} alt="" className="icon" />
       </a>
     ),
@@ -61,7 +61,7 @@ const itemsBotNavbar = [
   {
     text: "Youtube",
     icon: (
-      <a href="">
+      <a href="https://www.youtube.com/channel/UCOR9tgJpFrW3HTgs9T35rBg/videos?view=0&sort=p">
         <img src={IconYoutube} alt="" className="icon" />
       </a>
     ),
@@ -144,19 +144,19 @@ const Navbar = () => {
             </Button>
             <a
               href="https://www.facebook.com/Bioplan.proyecta/?locale=es_LA"
-              target="_blank"
+              target="_blank" rel="noreferrer"
             >
               <img src={IconFacebook} alt="" className="icon" />
             </a>
             <a
               href="https://www.instagram.com/bioplan.proyecta/?hl=es"
-              target="_blank"
+              target="_blank" rel="noreferrer"
             >
               <img src={IconInstagram} alt="" className="icon" />
             </a>
             <a
               href="https://www.youtube.com/channel/UCOR9tgJpFrW3HTgs9T35rBg/videos?view=0&sort=p"
-              target="_blank"
+              target="_blank" rel="noreferrer"
             >
               <img src={IconYoutube} alt="" className="icon" />
             </a>
@@ -210,7 +210,7 @@ const Navbar = () => {
                   <MenuIcon />
                 </IconButton>
                 <Typography variant="h6" noWrap component="div">
-                  <a className="img-logoBioplan">
+                  <a className="img-logoBioplan" href="/" component={RouterLink}>
                     <img src={LogoBioplan} alt="" className="LogoBioplan" />
                   </a>
                 </Typography>
@@ -266,7 +266,6 @@ const Navbar = () => {
           </Box>
         </div>
       </header>
-      <Outlet />
     </>
   );
 };
