@@ -4,7 +4,6 @@ import IconFacebook from "../../assets/icons/Facebook.png";
 import IconInstagram from "../../assets/icons/Instagram.png";
 import IconYoutube from "../../assets/icons/Youtube.png";
 import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
 import * as React from "react";
 import { styled, useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
@@ -144,19 +143,22 @@ const Navbar = () => {
             </Button>
             <a
               href="https://www.facebook.com/Bioplan.proyecta/?locale=es_LA"
-              target="_blank" rel="noreferrer"
+              target="_blank"
+              rel="noreferrer"
             >
               <img src={IconFacebook} alt="" className="icon" />
             </a>
             <a
               href="https://www.instagram.com/bioplan.proyecta/?hl=es"
-              target="_blank" rel="noreferrer"
+              target="_blank"
+              rel="noreferrer"
             >
               <img src={IconInstagram} alt="" className="icon" />
             </a>
             <a
               href="https://www.youtube.com/channel/UCOR9tgJpFrW3HTgs9T35rBg/videos?view=0&sort=p"
-              target="_blank" rel="noreferrer"
+              target="_blank"
+              rel="noreferrer"
             >
               <img src={IconYoutube} alt="" className="icon" />
             </a>
@@ -209,11 +211,9 @@ const Navbar = () => {
                 >
                   <MenuIcon />
                 </IconButton>
-                <Typography variant="h6" noWrap component="div">
-                  <a className="img-logoBioplan" href="/" component={RouterLink}>
-                    <img src={LogoBioplan} alt="" className="LogoBioplan" />
-                  </a>
-                </Typography>
+                <a className="img-logoBioplan" href="/" component={RouterLink}>
+                  <img src={LogoBioplan} alt="" className="LogoBioplan" />
+                </a>
               </Toolbar>
             </AppBar>
             <Drawer

@@ -1,3 +1,9 @@
+import { ComponentBlog } from "../../components/componentBlog";
+
 export const Blog = () => {
-  return <h1>Blog</h1>;
+  return (
+    <>
+      <ComponentBlog/>
+    </>
+  );
 };
