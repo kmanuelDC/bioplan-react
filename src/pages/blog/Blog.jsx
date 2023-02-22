@@ -8,34 +8,32 @@ import "./blog.css";
 export const Blog = () => {
   return (
     <>
-      <Box display="flex" justifyContent="center" width="100%">
+      <Box display="flex" justifyContent="center" className="container-blog">
         <Box
-          maxWidth="md"
+          maxWidth="85%"
           display="flex"
           justifyContent="center"
+          alignItems="center"
           flexDirection="column"
         >
           <Box className="Container_component-Blog-Header">
             <Typography variant="h6">Noticias</Typography>
-            <Box
-              display="flex"
-              alignContent="space-between"
-              alignItems="center"
-              className="container_search"
-            >
+            <Box className="container_search">
               <Input
                 fullWidth
                 placeholder="Buscar"
                 className="container_search-input"
               />
-              <Button>
+              <Button className="container_search-button">
                 <SearchIcon className="container_search-search" />
               </Button>
             </Box>
           </Box>
-          <ComponentBlog />
-          <Divider />
+          <Box className="Container_component-Blog-Main">
+            <ComponentBlog />
+          </Box>
         </Box>
+        <Divider />
       </Box>
     </>
   );

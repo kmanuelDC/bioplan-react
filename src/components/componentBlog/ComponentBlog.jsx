@@ -11,8 +11,8 @@ const ComponentBlog = () => {
         underline="none"
         component={Box}
         color=""
+        maxWidth="900px"
       >
-        <Box>
           <Typography variant="h6" color="#0791e6">
             Nuevo textoooo
           </Typography>
@@ -42,7 +42,6 @@ const ComponentBlog = () => {
               fecha
             </Typography>
           </Box>
-        </Box>
       </Link>
     </>
   );
