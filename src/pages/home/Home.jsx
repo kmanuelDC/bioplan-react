@@ -1,9 +1,10 @@
 import React, { memo } from "react";
-import { CardContainer } from "../../components";
+import { CardContainer, Carousel } from "../../components";
 
 export const Home = memo(() => {
   return (
     <>
+      <Carousel />
       <CardContainer />
     </>
   );

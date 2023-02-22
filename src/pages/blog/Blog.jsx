@@ -8,7 +8,7 @@ import "./blog.css";
 export const Blog = () => {
   return (
     <>
-      <Box display="flex" justifyContent="center" className="container-blog">
+      <Box display="flex" justifyContent="center" className="blog">
         <Box
           maxWidth="85%"
           display="flex"
