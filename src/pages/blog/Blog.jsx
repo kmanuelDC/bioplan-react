@@ -1,6 +1,5 @@
 import { ComponentBlog } from "../../components/componentBlog";
 import Box from "@mui/material/Box";
-import Container from "@mui/material/Container";
 import Input from "@mui/material/Input";
 import SearchIcon from "@mui/icons-material/Search";
 import { Button, Divider, Typography } from "@mui/material";
@@ -10,11 +9,14 @@ export const Blog = () => {
   return (
     <>
       <Box display="flex" justifyContent="center" width="100%">
-        <Box maxWidth="md" display="flex" justifyContent="center" flexDirection="column">
+        <Box
+          maxWidth="md"
+          display="flex"
+          justifyContent="center"
+          flexDirection="column"
+        >
           <Box className="Container_component-Blog-Header">
-            <Typography variant="h6" sx={{  }}>
-              Noticias
-            </Typography>
+            <Typography variant="h6">Noticias</Typography>
             <Box
               display="flex"
               alignContent="space-between"

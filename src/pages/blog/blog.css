@@ -10,7 +10,4 @@
     justify-content: center;
     background-color: antiquewhite;
   }
-  .container-search .container_search-input {
-    flex-grow: 1;
-  }
 }
