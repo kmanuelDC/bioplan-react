@@ -20,7 +20,7 @@ const theme = createTheme({
         root: {
           backgroundColor: "var(--orange-color)",
           padding: "10px",
-          marginRight: "30px",
+          position: "relative",
         },
       },
     },
@@ -49,7 +49,7 @@ const theme = createTheme({
   },
 });
 
-export default function CardPrimary() {
+const IndividualCard = () => {
   return (
     <ThemeProvider theme={theme}>
       <MyCard sx={{ maxWidth: 345 }}>
@@ -73,4 +73,5 @@ export default function CardPrimary() {
       </MyCard>
     </ThemeProvider>
   );
-}
+};
+export default IndividualCard;
