@@ -1,0 +1,16 @@
+.Container_component-Blog-Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 662px) {
+  .Container_component-Blog-Header {
+    justify-content: center;
+    background-color: antiquewhite;
+  }
+  .container-search .container_search-input {
+    flex-grow: 1;
+  }
+}
