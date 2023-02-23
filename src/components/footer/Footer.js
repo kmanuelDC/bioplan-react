@@ -16,6 +16,7 @@ import ListItem from "@mui/material/ListItem";
 import "./styles.css";
 import List from "@mui/material/List";
 import Googleplay from "../../assets/images/googleplay.png";
+import ButtonPlayStore from "../buttonPlaystore/buttonPS";
 
 const itemsContactosFooter = [
     { text: "Jr. Romero 189", icon: <HomeIcon /> },
@@ -26,7 +27,7 @@ const itemsContactosFooter = [
   const itemsPaginasFooter = [
     { text: "Nosotros"  },
     { text: "Contáctanos" },
-    { text: "Poryectos" },
+    { text: "Proyectos" },
     { text: "Políticas" },
     { text: "Donaciones" },
    
@@ -60,27 +61,7 @@ const footer=()=>{
                 </ListItem>
               ))}
             </List>
-            <div className="container-icons">
-          
-          <a
-            href="https://www.facebook.com/Bioplan.proyecta/?locale=es_LA"
-            target="_blank"
-          >
-            <img src={IconFacebook} alt="" className="icon" />
-          </a>
-          <a
-            href="https://www.instagram.com/bioplan.proyecta/?hl=es"
-            target="_blank"
-          >
-            <img src={IconInstagram} alt="" className="icon" />
-          </a>
-          <a
-            href="https://www.youtube.com/channel/UCOR9tgJpFrW3HTgs9T35rBg/videos?view=0&sort=p"
-            target="_blank"
-          >
-            <img src={IconYoutube} alt="" className="icon" />
-          </a>
-        </div>
+        
             </li>
             <li className="lista1">
                 <h2>Páginas</h2>
@@ -88,7 +69,7 @@ const footer=()=>{
               {itemsPaginasFooter.map((item) => (
                 <ListItem key={item.text} >
                   <ListItem>
-                    <ListItemIcon>{item.icon}</ListItemIcon>
+                    {/* <ListItemIcon>{item.icon}</ListItemIcon> */}
                     <ListItemText primary={item.text} />
                   </ListItem>
                 </ListItem>
@@ -97,20 +78,26 @@ const footer=()=>{
             </li>
             <li>
             <h2>Políticas</h2>
+            <div className="center-columns">
             <List>
               {itemsPoliticasFooter.map((item) => (
                 <ListItem key={item.text}>
                   <ListItem>
-                    <ListItemIcon>{item.icon}</ListItemIcon>
+                    {/* <ListItemIcon>{item.icon}</ListItemIcon> */}
                     <ListItemText primary={item.text} />
                   </ListItem>
                 </ListItem>
               ))}
             </List>
+            </div>
             </li>
             <li>
+              <div className="Button-playstore">
                 <h2>Nuestra App</h2>
-            <a href="">  <img src={Googleplay} alt="" className="iconApp" /></a>
+                <ButtonPlayStore/>
+              </div>
+            {/* <a href="">  <img src={Googleplay} alt="" className="iconApp" /></a> */}
+
             </li>
         </ul>
     </footer>
