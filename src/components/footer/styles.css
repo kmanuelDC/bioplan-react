@@ -1,0 +1,19 @@
+.footer-container{
+    background: #0F4229;
+    color: white;
+    text-decoration: none;
+}
+.footer-lista{
+    
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    flex-grow: inherit;    
+
+}
+
+.li{
+   
+    display: inline;
+    align-items: left;
+}
