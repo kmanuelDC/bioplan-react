@@ -166,27 +166,53 @@ const Navbar = () => {
         </div>
         <div className="navbar-bot-container">
           <AppBar position="relative" color="primary" className="">
-            <Toolbar className="conatiner-button">
-              <Button color="inherit" component={RouterLink} to="/">
+            <Toolbar className="container-button">
+              <Button
+                color="inherit"
+                component={RouterLink}
+                to="/"
+                className="navbar-button"
+              >
                 INICIO
               </Button>
-              <Button color="inherit" component={RouterLink} to="/Proyectos">
+              <Button
+                color="inherit"
+                component={RouterLink}
+                to="/Proyectos"
+                className="navbar-button"
+              >
                 PROYECTOS
               </Button>
               <Button
                 color="inherit"
                 component={RouterLink}
                 to="/Convocatorias"
+                className="navbar-button"
               >
                 CONVOCATORIAS
               </Button>
-              <Button color="inherit" component={RouterLink} to="/Blog">
+              <Button
+                color="inherit"
+                component={RouterLink}
+                to="/Blog"
+                className="navbar-button"
+              >
                 BLOG
               </Button>
-              <Button color="inherit" component={RouterLink} to="/Conocenos">
+              <Button
+                color="inherit"
+                component={RouterLink}
+                to="/Conocenos"
+                className="navbar-button"
+              >
                 CÓNOCENOS
               </Button>
-              <Button color="inherit" component={RouterLink} to="/Contactanos">
+              <Button
+                color="inherit"
+                component={RouterLink}
+                to="/Contactanos"
+                className="navbar-button"
+              >
                 CONTÁCTANOS
               </Button>
             </Toolbar>
