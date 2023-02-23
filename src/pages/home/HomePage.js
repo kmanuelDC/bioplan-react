@@ -7,8 +7,7 @@ export const HomePage = memo(() => {
   return (
     <>
       <Navbar />
-      <CardComponent />    
-      <div>HOLA MUNDO</div>
+      <CardComponent />         
       <Footer/>
     </>
   );

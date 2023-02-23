@@ -1,0 +1,1 @@
+export { Convocatories } from "./Convocatories";
