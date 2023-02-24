@@ -1,12 +1,24 @@
-
-
-.button-playstore{
-    color: white;
-    background-color: black;
-    border-radius: 5px;
-    width: 10em;
-    height: 3em;
-    font-size: large;
-    font-weight: bold;
+.button-playstore {
+    color: white !important;
+    background-color: rgb(15, 53, 15) !important;
+    border-radius: 5px !important;
+    width: 10em !important;
+    height: 3em !important;
+    font-size: large !important;    
+    position: relative !important;
+    padding-top: 7px;
+    
 }
 
+
+.link-footer{
+    color: white;
+    text-decoration: none;
+   
+}
+
+.link-footer:hover {
+    color: rgb(90, 150, 1);
+    text-decoration: none;
+    
+}

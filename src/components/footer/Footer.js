@@ -1,100 +1,67 @@
-
-import HomeIcon from "@mui/icons-material/Home";
-import WorkOutlineIcon from "@mui/icons-material/WorkOutline";
-import CampaignIcon from "@mui/icons-material/Campaign";
-import ArticleIcon from "@mui/icons-material/Article";
-import { useTheme } from "@emotion/react";
 import React from "react";
-import IconFacebook from "../../assets/icons/Facebook.png";
-import IconInstagram from "../../assets/icons/Instagram.png";
-import IconYoutube from "../../assets/icons/Youtube.png";
-import Button from "@mui/material/Button";
-import ListItemText from "@mui/material/ListItemText";
-import ListItemIcon from "@mui/material/ListItemIcon";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItem from "@mui/material/ListItem";
+
 import "./styles.css";
 import List from "@mui/material/List";
-import Googleplay from "../../assets/images/googleplay.png";
 import ButtonPlayStore from "../buttonPlaystore/buttonPS";
+import MapIcon from "@mui/icons-material/LocationOn";
+import PhoneIcon from "@mui/icons-material/Phone";
+import MailIcon from "@mui/icons-material/Mail";
+import Buttonbtn from '../btn/btn-ps';
+import Linkbtn from '../btn/link-ps';
+import Lista from '../lista/Lista';
+import PlayStore from "../../assets/icons/playstore";
 
-const itemsContactosFooter = [
-    { text: "Jr. Romero 189", icon: <HomeIcon /> },
-    { text: "+51940411041", icon: <WorkOutlineIcon /> },
-    { text: "bioplan.proyecta@gmail.com", icon: <CampaignIcon /> },
-   
-  ];
-  const itemsPaginasFooter = [
-    { text: "Nosotros"  },
-    { text: "Contáctanos" },
-    { text: "Proyectos" },
-    { text: "Políticas" },
-    { text: "Donaciones" },
-   
-  ];
-  const itemsPoliticasFooter = [
-    { text: "Políticas de Privacidad" },
-    { text: "Reglamento Interno" },
-    { text: "Preguntas Frecuentes" },
-    { text: "Únete al voluntariado" },
-   
-  ];
-  const itemsNuestraAppFooter= [
-    { img: "./logo192" },
- 
-   
-  ];
+const data = [
+  {
+    title: 'Contactos',
+    items: [
+      { text: "Jr. Romero 189", icon: <MapIcon/> },
+      { text: "+51940411041", icon: <PhoneIcon /> },
+      { text: "bioplan.proyecta@gmail.com", icon: <MailIcon /> },
+  
+    ]
+  },
+  {
+    title: 'Páginas',
+    items: [
+      { text: "> Nosotros", url:'https://www.google.com', class:"link-footer" },
+      { text: "> Contáctanos", url:'https://www.google.com', class:"link-footer" },
+      { text: "> Proyectos", url:'https://www.google.com', class:"link-footer" },
+      { text: "> Políticas", url:'https://www.google.com', class:"link-footer" },
+      { text: "> Donaciones", url:'https://www.google.com', class:"link-footer" }
+    ]
+  },
+  {
+    title: 'Políticas',
+    items: [
+      { text: "> Políticas de Privacidad",  url:'https://www.google.com', class:"link-footer" },
+      { text: "> Reglamento Interno" ,  url:'https://www.google.com', class:"link-footer"},
+      { text: "> Preguntas Frecuentes" ,  url:'https://www.google.com', class:"link-footer"},
+      { text: "> Únete al voluntariado" ,  url:'https://www.google.com', class:"link-footer"}
+    ]
+  }
+];
+
 const footer=()=>{
   return (
-    <footer className="footer-container">
-       
+    <footer className="footer-container" >
+
         <ul className="footer-lista">
-            <li>
-                <h2>Contactos</h2>
-                <List>
-              {itemsContactosFooter.map((item) => (
-                <ListItem key={item.text} >
-                  <ListItem>
-                    <ListItemIcon>{item.icon}</ListItemIcon>
-                    <ListItemText primary={item.text} />
-                  </ListItem>
-                </ListItem>
-              ))}
-            </List>
-        
-            </li>
-            <li className="lista1">
-                <h2>Páginas</h2>
-            <List >
-              {itemsPaginasFooter.map((item) => (
-                <ListItem key={item.text} >
-                  <ListItem>
-                    {/* <ListItemIcon>{item.icon}</ListItemIcon> */}
-                    <ListItemText primary={item.text} />
-                  </ListItem>
-                </ListItem>
-              ))}
-            </List>
-            </li>
-            <li>
-            <h2>Políticas</h2>
-            <div className="center-columns">
-            <List>
-              {itemsPoliticasFooter.map((item) => (
-                <ListItem key={item.text}>
-                  <ListItem>
-                    {/* <ListItemIcon>{item.icon}</ListItemIcon> */}
-                    <ListItemText primary={item.text} />
-                  </ListItem>
-                </ListItem>
-              ))}
-            </List>
-            </div>
-            </li>
+          {
+            data.map((item) => (
+              <li >
+                <h2>{item.title}</h2>
+                <Lista items={item.items}></Lista>
+              </li>
+            ))
+          }
             <li>
               <div className="Button-playstore">
                 <h2>Nuestra App</h2>
-                <ButtonPlayStore/>
+                
+                <Buttonbtn class="button-playstore" icon={<PlayStore/>} url="https://www.google.com">PLAYSTORE</Buttonbtn> 
+                <br></br>
+                {/* <Linkbtn class="btn button-playstore p-3" icon={<PlayStore/>} url="https://www.google.com">PLAYSTORE</Linkbtn> */}
               </div>
             {/* <a href="">  <img src={Googleplay} alt="" className="iconApp" /></a> */}
 

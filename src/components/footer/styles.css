@@ -1,23 +1,19 @@
 .footer-container{
     background: #0F4229;
-    color: white;
-    text-decoration: none;
+    color: white; 
+    margin-top: 20px;  
+    padding-top: 20px;
 }
-.footer-lista{
+.footer-container .footer-lista{
     
     list-style-type: none;
     display: flex;
-    justify-content: space-around;
-    flex-grow: inherit;    
-
-}
-
-.li{
-   
-    display: inline;
-    align-items: left;
-}
-
-.footer-container .footer-lista .center-columns{
+    justify-content: space-around; 
     
+    }
+
+.footer-container .footer-lista .lista-listas .items-listas{
+    padding:200px !important ;
 }
+
+
