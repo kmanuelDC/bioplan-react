@@ -13,35 +13,35 @@ const ComponentBlog = () => {
         color=""
         maxWidth="900px"
       >
-          <Typography variant="h6" color="#0791e6">
-            Nuevo textoooo
-          </Typography>
+        <Typography variant="h6" color="#0791e6">
+          Nuevo textoooo
+        </Typography>
+        <Typography
+          variant="subtitle2"
+          color="initial"
+          sx={{ marginTop: "10px" }}
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+          earum provident aut architecto commodi cum fuga. Quasi pariatur
+          obcaecati accusantium sed, deserunt incidunt, laudantium asperiores
+          voluptates blanditiis nobis dolores excepturi!
+        </Typography>
+        <Box className="Component-Blog-NF">
           <Typography
             variant="subtitle2"
             color="initial"
-            sx={{ marginTop: "10px" }}
+            className="Component-Blog-N"
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-            earum provident aut architecto commodi cum fuga. Quasi pariatur
-            obcaecati accusantium sed, deserunt incidunt, laudantium asperiores
-            voluptates blanditiis nobis dolores excepturi!
+            nombre
           </Typography>
-          <Box className="Component-Blog-NF">
-            <Typography
-              variant="subtitle2"
-              color="initial"
-              className="Component-Blog-N"
-            >
-              nombre
-            </Typography>
-            <Typography
-              variant="body2"
-              color="initial"
-              className="Component-Blog-F"
-            >
-              fecha
-            </Typography>
-          </Box>
+          <Typography
+            variant="body2"
+            color="initial"
+            className="Component-Blog-F"
+          >
+            fecha
+          </Typography>
+        </Box>
       </Link>
     </>
   );

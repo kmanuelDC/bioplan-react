@@ -1,7 +1,6 @@
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import { Box, Button, Link } from "@mui/material";
 
-
 const ComponentReadMore = () => {
   return (
     <>

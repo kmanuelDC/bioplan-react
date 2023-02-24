@@ -1,4 +1,4 @@
-.blog{
+.blog {
   margin-top: 50px;
 }
 .container_search {
@@ -16,7 +16,7 @@
   gap: 22px;
   width: 100%;
 }
-.Container_component-Blog-Main{
+.Container_component-Blog-Main {
   display: flex;
   justify-content: center;
 }
@@ -26,8 +26,8 @@
     flex-wrap: wrap;
     justify-content: center;
   }
- 
-  .container_search{
+
+  .container_search {
     position: relative;
     left: 20px;
   }

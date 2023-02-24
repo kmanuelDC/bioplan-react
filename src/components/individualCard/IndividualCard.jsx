@@ -52,7 +52,7 @@ const theme = createTheme({
 const IndividualCard = () => {
   return (
     <ThemeProvider theme={theme}>
-      <MyCard sx={{ maxWidth: 345 }}>
+      <MyCard sx={{ maxWidth: 300, }}>
         <CardMedia
           component="img"
           alt="Rio San Lucas"
