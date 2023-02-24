@@ -1,0 +1,19 @@
+.footer-container{
+    background: #0F4229;
+    color: white; 
+    margin-top: 20px;  
+    padding-top: 20px;
+}
+.footer-container .footer-lista{
+    
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around; 
+    
+    }
+
+.footer-container .footer-lista .lista-listas .items-listas{
+    padding:200px !important ;
+}
+
+
