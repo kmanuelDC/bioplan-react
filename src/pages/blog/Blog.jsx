@@ -14,9 +14,8 @@ export const Blog = () => {
     <>
       <Box display="flex" justifyContent="center" className="blog">
         <Box
-          maxWidth="85%"
+          width="85%"
           display="flex"
-          justifyContent="center"
           alignItems="center"
           flexDirection="column"
         >

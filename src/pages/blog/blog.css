@@ -14,19 +14,19 @@
   flex-wrap: wrap;
   margin-bottom: 30px;
   gap: 22px;
-  width: 100%;
+  width: 70%;
 }
 .Container_component-Blog-Main {
   display: flex;
   justify-content: center;
 }
-@media screen and (max-width: 662px) {
+@media screen and (max-width: 750px) {
   .Container_component-Blog-Header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
   }
-
   .container_search {
     position: relative;
     left: 20px;

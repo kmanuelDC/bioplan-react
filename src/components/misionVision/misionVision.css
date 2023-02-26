@@ -1,0 +1,23 @@
+.container_misionVision {
+  display: flex;
+  max-width: 350px;
+}
+
+.container_misionVision .container-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 40px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+.container_misionVision .container-img-Mision {
+  background-image: url(/src/assets/images/image-Mision.jpg);
+}
+.container_misionVision .container-img-Vision {
+  background-image: url(/src/assets/images/image-Mision.jpg);
+}
