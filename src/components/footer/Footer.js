@@ -20,27 +20,27 @@ const data = [
     title: "Páginas",
     items: [
       {
-        text: "> Nosotros",
+        text: "Nosotros",
         url: "https://www.google.com",
         class: "link-footer",
       },
       {
-        text: "> Contáctanos",
+        text: "Contáctanos",
         url: "https://www.google.com",
         class: "link-footer",
       },
       {
-        text: "> Proyectos",
+        text: "Proyectos",
         url: "https://www.google.com",
         class: "link-footer",
       },
       {
-        text: "> Políticas",
+        text: "Políticas",
         url: "https://www.google.com",
         class: "link-footer",
       },
       {
-        text: "> Donaciones",
+        text: "Donaciones",
         url: "https://www.google.com",
         class: "link-footer",
       },
@@ -50,22 +50,22 @@ const data = [
     title: "Políticas",
     items: [
       {
-        text: "> Políticas de Privacidad",
+        text: "Políticas de Privacidad",
         url: "https://www.google.com",
         class: "link-footer",
       },
       {
-        text: "> Reglamento Interno",
+        text: "Reglamento Interno",
         url: "https://www.google.com",
         class: "link-footer",
       },
       {
-        text: "> Preguntas Frecuentes",
+        text: "Preguntas Frecuentes",
         url: "https://www.google.com",
         class: "link-footer",
       },
       {
-        text: "> Únete al voluntariado",
+        text: "Únete al voluntariado",
         url: "https://www.google.com",
         class: "link-footer",
       },
@@ -77,10 +77,10 @@ const footer = () => {
   return (
     <footer className="footer-container">
       <ul className="footer-lista">
-        {data.map((item) => (
-          <li>
-            <h2>{item.title}</h2>
-            <Lista items={item.items}></Lista>
+        {data.map((item,i) => (
+          <li key={`li-${i}`}>
+            <h2 key={`h2-${i}`}>{item.title}</h2>
+            <Lista key={`ls-${i}`} items={item.items}></Lista>
           </li>
         ))}
         <li>
