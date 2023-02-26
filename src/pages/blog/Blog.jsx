@@ -6,6 +6,10 @@ import { Button, Divider, Typography } from "@mui/material";
 import "./blog.css";
 
 export const Blog = () => {
+  const titulo = "Titulo";
+  const parrafo = "parrafo";
+  const nombre = "nombre";
+  const fecha = "01/02/2023";
   return (
     <>
       <Box display="flex" justifyContent="center" className="blog">
@@ -30,10 +34,15 @@ export const Blog = () => {
             </Box>
           </Box>
           <Box className="Container_component-Blog-Main">
-            <ComponentBlog />
+            <ComponentBlog
+              titulo={titulo}
+              parrafo={parrafo}
+              nombre={nombre}
+              fecha={fecha}
+            />
+            <Divider variant="fullWidth" orientation="vertical" />
           </Box>
         </Box>
-        <Divider />
       </Box>
     </>
   );
