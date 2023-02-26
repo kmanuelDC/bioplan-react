@@ -3,7 +3,7 @@ import Link from "@mui/material/Link";
 import { Typography } from "@mui/material";
 import "./componentBlog.css";
 
-const ComponentBlog = () => {
+const ComponentBlog = ({ titulo, parrafo, fecha, nombre }) => {
   return (
     <>
       <Link
@@ -14,17 +14,14 @@ const ComponentBlog = () => {
         maxWidth="900px"
       >
         <Typography variant="h6" color="#0791e6">
-          Nuevo textoooo
+          {titulo}
         </Typography>
         <Typography
           variant="subtitle2"
           color="initial"
           sx={{ marginTop: "10px" }}
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-          earum provident aut architecto commodi cum fuga. Quasi pariatur
-          obcaecati accusantium sed, deserunt incidunt, laudantium asperiores
-          voluptates blanditiis nobis dolores excepturi!
+          {parrafo}
         </Typography>
         <Box className="Component-Blog-NF">
           <Typography
@@ -32,14 +29,14 @@ const ComponentBlog = () => {
             color="initial"
             className="Component-Blog-N"
           >
-            nombre
+            {nombre}
           </Typography>
           <Typography
             variant="body2"
             color="initial"
             className="Component-Blog-F"
           >
-            fecha
+            {fecha}
           </Typography>
         </Box>
       </Link>
