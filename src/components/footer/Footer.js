@@ -1,5 +1,4 @@
 import React from "react";
-
 import "./styles.css";
 import MapIcon from "@mui/icons-material/LocationOn";
 import PhoneIcon from "@mui/icons-material/Phone";

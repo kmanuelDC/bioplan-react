@@ -5,3 +5,4 @@ export { ComponentBlog } from "./componentBlog";
 export { ComponentReadMore } from "./componentReadMore";
 export { Carousel } from "./carousel";
 export { Footer } from "./footer";
+export { Navbar } from "./navbar";
