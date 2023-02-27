@@ -1,7 +1,27 @@
-.conocenos{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 22px;
-    margin-top: 20px;
+.page-conocenos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin-top: 30px;
 }
+
+/* start section-quienesSomos */
+.section-quienesSomos {
+    display: flex;
+    padding: 10px 20px;
+    background: var(--orange-color);
+    border-radius: 10px;
+}
+
+/* end section-quienesSomos */
+
+/* start section-misionVision */
+.section-misionVision {
+  display: flex;
+  max-width: 1200px;
+  gap: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+/* end section-misionVision */
