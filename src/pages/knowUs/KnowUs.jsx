@@ -20,7 +20,7 @@ export const KnowUs = () => {
     <>
       <div className="page-conocenos">
         <section className="section-quienesSomos">
-          <Box>
+          <Box className="container-content">
             <Typography variant="h3" color="" className="title-conocenos">
               ¿Quienes somos?
             </Typography>

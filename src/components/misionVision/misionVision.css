@@ -4,9 +4,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 10px;
+  box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
 }
 
-.container-content {
+.container_misionVision .container-content {
   background: rgba(3, 139, 129, 0.7);
   padding: 15px 25px;
   display: flex;

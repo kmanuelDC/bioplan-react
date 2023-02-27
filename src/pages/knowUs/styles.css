@@ -2,16 +2,39 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
-  margin-top: 30px;
+  gap: 50px;
+  margin-top: 50px;
 }
 
 /* start section-quienesSomos */
 .section-quienesSomos {
-    display: flex;
-    padding: 10px 20px;
-    background: var(--orange-color);
-    border-radius: 10px;
+  display: flex;
+  padding: 10px 20px;
+  background: var(--orange-color);
+  border-radius: 10px;
+  max-width: 1100px;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.section-quienesSomos .container-content {
+  padding: 15px 25px;
+  text-align: center;
+  width: 450px;
+  gap: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  outline: solid 2px rgba(0, 0, 0, 0.2);
+  outline-offset: -10px;
+}
+.section-quienesSomos iframe {
+  border-radius: 15px;
 }
 
 /* end section-quienesSomos */
@@ -21,7 +44,9 @@
   display: flex;
   max-width: 1200px;
   gap: 50px;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
+  width: 100%;
 }
+
 /* end section-misionVision */
