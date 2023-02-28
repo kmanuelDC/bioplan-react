@@ -1,9 +1,36 @@
+@import "../../App.css";
 .page-conocenos {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 50px;
-  margin-top: 50px;
+  gap: 150px;
+  margin-top: 100px;
+}
+
+.page-conocenos .container-header {
+  max-width: 1120px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-conocenos .title-conocenos {
+  color: var(--green-color-third);
+}
+.page-conocenos .title-conocenos {
+  font-size: 85px;
+}
+@media screen and (max-width: 750px) {
+  .page-conocenos .title-conocenos {
+    font-size: 75px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .page-conocenos .title-conocenos {
+    font-size: 65px;
+  }
 }
 
 /* start section-quienesSomos */
@@ -11,15 +38,20 @@
   display: flex;
   padding: 10px 20px;
   background: var(--orange-color);
-  border-radius: 10px;
+  border-radius: 15px;
   max-width: 1100px;
   gap: 25px;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   width: 100%;
+  margin-top: -50px;
 }
-
+@media screen and (max-width: 981px) {
+  .section-quienesSomos {
+    max-width: 600px;
+  }
+}
 .section-quienesSomos .container-content {
   padding: 15px 25px;
   text-align: center;
@@ -35,6 +67,8 @@
 }
 .section-quienesSomos iframe {
   border-radius: 15px;
+  width: 450px;
+  height: 250px;
 }
 
 /* end section-quienesSomos */
@@ -46,7 +80,42 @@
   gap: 50px;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  width: 100%;
+  margin-top: -70px;
 }
 
 /* end section-misionVision */
+
+/* start section-equipo */
+.section-equipo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  max-width: 1150px;
+}
+.section-equipo hr {
+  width: 100%;
+  height: 3px;
+  background: var(--orange-color);
+  border: none;
+  opacity: 1;
+}
+.section-equipo .title-equipo {
+  color: var(--green-color-third);
+  text-align: center;
+  margin-top: -40px;
+  background-color: white;
+}
+
+@media screen and (max-width: 750px) {
+  .section-equipo .title-equipo {
+    font-size: 45px;
+  }
+}
+.section-equipo .container-workers {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/* end section-equipo */

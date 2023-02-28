@@ -1,0 +1,29 @@
+@import "../../App.css";
+.css-bhp9pd-MuiPaper-root-MuiCard-root {
+    
+    box-shadow: none
+}
+.card_worker {
+  max-width: 267px;
+  padding: 30px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.card_worker .card_worker-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.card_worker .card_worker-photo {
+  border-radius: 15px;
+  width: 197px;
+  height: 197px;
+  border: solid 3px var(--orange-color);
+  object-fit: cover;
+}

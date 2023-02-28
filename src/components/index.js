@@ -7,3 +7,4 @@ export { Carousel } from "./carousel";
 export { Footer } from "./footer";
 export { Navbar } from "./navbar";
 export { MisionVision } from "./misionVision";
+export { CardPhotography } from "./cardPhotography";
