@@ -46,7 +46,11 @@ export const KnowUs = () => {
         <section className="section-conocenos">
           <Box className="container">
             <Box className="container-content">
-              <Typography variant="h1" className="title-quienesSomos" color="#164620">
+              <Typography
+                variant="h1"
+                className="title-quienesSomos"
+                color="#164620"
+              >
                 Conocenos
               </Typography>
               <Typography variant="body1" color="">
