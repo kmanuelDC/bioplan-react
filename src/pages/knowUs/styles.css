@@ -79,10 +79,9 @@
 .section-misionVision .container-cardsMisionVision {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   gap: 25px;
-  width: 90vw;
 }
 
 @media screen and (max-width:1400px) {

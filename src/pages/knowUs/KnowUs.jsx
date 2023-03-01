@@ -12,7 +12,7 @@ const dataMisionVision = [
   },
   {
     title: "Visión",
-    image: Image_Mision,
+    image: Photo1,
     text: "Contribuir de manera significativa al desarrollo sostenible de nuestro entorno y cumplir con nuestros objetivos trazados cada año.",
   },
 ];
@@ -46,7 +46,9 @@ export const KnowUs = () => {
         <section className="section-conocenos">
           <Box className="container">
             <Box className="container-content">
-              <Typography variant="h1"  className="title-quienesSomos" >Conocenos</Typography>
+              <Typography variant="h1" className="title-quienesSomos">
+                Conocenos
+              </Typography>
               <Typography variant="body1" color="">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut,
                 adipisci repellendus aspernatur velit quis excepturi natus rem
@@ -74,6 +76,7 @@ export const KnowUs = () => {
               <MisionVision
                 title={item.title}
                 text={item.text}
+                img={item.image}
                 key={item.title}
               />
             ))}

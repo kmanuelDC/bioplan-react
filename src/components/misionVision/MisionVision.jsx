@@ -1,12 +1,16 @@
 import Typography from "@mui/material/Typography";
-import { Box } from "@mui/material";
+import { Box, CardMedia } from "@mui/material";
 import "./misionVision.css";
 
-const MisionVision = ({ text, title }) => {
+const MisionVision = ({ title, text, img }) => {
   return (
     <>
-      <Box className="container_misionVision img-Mision img-Vision">
-        <Box className="container-content">
+      <Box
+        className={`container_misionVision ${
+          title === "Mision" ? "Mision" : "Vision"
+        }`}
+      >
+        <Box className={`container-content `}>
           <Typography variant="h3" color="" className="text">
             {title}
           </Typography>
@@ -14,6 +18,12 @@ const MisionVision = ({ text, title }) => {
             {text}
           </Typography>
         </Box>
+        <CardMedia
+          title=""
+          image={img}
+          component="img"
+          className="img-mision-vision"
+        />
       </Box>
     </>
   );
