@@ -46,7 +46,7 @@ export const KnowUs = () => {
         <section className="section-conocenos">
           <Box className="container">
             <Box className="container-content">
-              <Typography variant="h1" className="title-quienesSomos">
+              <Typography variant="h1" className="title-quienesSomos" color="#164620">
                 Conocenos
               </Typography>
               <Typography variant="body1" color="">
@@ -68,7 +68,7 @@ export const KnowUs = () => {
           </Box>
         </section>
         <section className="section-misionVision">
-          <Typography variant="h2" color="">
+          <Typography variant="h2" color="#164620">
             Nuestro Propósito
           </Typography>
           <Box className="container-cardsMisionVision">
@@ -84,7 +84,7 @@ export const KnowUs = () => {
         </section>
         <section className="section-equipo">
           <hr />
-          <Typography variant="h2" color="" className="title-equipo">
+          <Typography variant="h2" color="#164620" className="title-equipo">
             Nuestro Equipo
           </Typography>
           <Box className="container-workers">

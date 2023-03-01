@@ -5,11 +5,7 @@ import "./misionVision.css";
 const MisionVision = ({ title, text, img }) => {
   return (
     <>
-      <Box
-        className={`container_misionVision ${
-          title === "Mision" ? "Mision" : "Vision"
-        }`}
-      >
+      <Box className={`container_misionVision`}>
         <Box className={`container-content `}>
           <Typography variant="h3" color="" className="text">
             {title}

@@ -1,8 +1,5 @@
 @import "../../App.css";
-.css-bhp9pd-MuiPaper-root-MuiCard-root {
-    
-    box-shadow: none
-}
+
 .card_worker {
   max-width: 267px;
   padding: 30px;
@@ -11,6 +8,7 @@
   flex-direction: column;
   gap: 15px;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  background-color: white;
 }
 
 .card_worker .card_worker-content {
