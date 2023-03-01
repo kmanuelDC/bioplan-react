@@ -43,41 +43,41 @@ export const KnowUs = () => {
   return (
     <>
       <div className="page-conocenos">
-        <Box className="container-header">
-          <Typography variant="h1" color="" className="title-conocenos">
-            Conocénos
-          </Typography>
-        </Box>
-        <section className="section-quienesSomos">
-          <Box className="container-content">
-            <Typography variant="h4" color="" className="title-quienesSomos">
-              quienesSomos
-            </Typography>
-            <Typography variant="body1" color="">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut,
-              adipisci repellendus aspernatur velit quis excepturi natus rem
-              quisquam dolorum minima optio numquam illum ipsa iure nostrum
-              voluptatum esse assumenda quae.
-            </Typography>
+        <section className="section-conocenos">
+          <Box className="container">
+            <Box className="container-content">
+              <Typography variant="h1"  className="title-quienesSomos" >Conocenos</Typography>
+              <Typography variant="body1" color="">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut,
+                adipisci repellendus aspernatur velit quis excepturi natus rem
+                quisquam dolorum minima optio numquam illum ipsa iure nostrum
+                voluptatum esse assumenda quae.
+              </Typography>
+            </Box>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/-iQdMvfw1jk"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            ></iframe>
           </Box>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/-iQdMvfw1jk"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-          ></iframe>
         </section>
         <section className="section-misionVision">
-          {dataMisionVision.map((item) => (
-            <MisionVision
-              title={item.title}
-              text={item.text}
-              key={item.title}
-            />
-          ))}
+          <Typography variant="h2" color="">
+            Nuestro Propósito
+          </Typography>
+          <Box className="container-cardsMisionVision">
+            {dataMisionVision.map((item) => (
+              <MisionVision
+                title={item.title}
+                text={item.text}
+                key={item.title}
+              />
+            ))}
+          </Box>
         </section>
         <section className="section-equipo">
           <hr />
