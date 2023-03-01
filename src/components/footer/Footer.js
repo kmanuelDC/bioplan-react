@@ -77,7 +77,7 @@ const footer = () => {
   return (
     <footer className="footer-container">
       <ul className="footer-lista">
-        {data.map((item,i) => (
+        {data.map((item, i) => (
           <li key={`li-${i}`}>
             <h2 key={`h2-${i}`}>{item.title}</h2>
             <Lista key={`ls-${i}`} items={item.items}></Lista>
