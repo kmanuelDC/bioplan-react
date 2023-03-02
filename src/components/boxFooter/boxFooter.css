@@ -1,0 +1,8 @@
+.footer {
+  background: var(--green-color-third);
+  display: flex;
+  justify-content: space-evenly;
+  padding: 50px 15px;
+  flex-wrap: wrap;
+  gap: 30px;
+}

@@ -1,0 +1,23 @@
+.container-lista-footer {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 25px;
+  padding: 20px;
+  max-width: 300px;
+  width: 100%;
+}
+
+.container-lista-footer .container-li {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.container-lista-footer .link-footer {
+  text-decoration: none;
+  color: white;
+}
