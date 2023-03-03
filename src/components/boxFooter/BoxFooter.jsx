@@ -5,6 +5,8 @@ import PhoneIcon from "@mui/icons-material/Phone";
 import MailIcon from "@mui/icons-material/Mail";
 import { Box } from "@mui/material";
 import { ListaFooter } from "../listaFooter";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import GooglePlayIcon from "../../assets/images/playStore.png";
 
 const dataFooter = [
   {
@@ -21,30 +23,37 @@ const dataFooter = [
       {
         text: "Inicio",
         url: "/",
+        icon: <ArrowForwardIosIcon />,
       },
       {
         text: "Proyectos",
         url: "/Proyectos",
+        icon: <ArrowForwardIosIcon />,
       },
       {
         text: "Convocatorias",
         url: "/Convocatorias",
+        icon: <ArrowForwardIosIcon />,
       },
       {
         text: "Blog",
         url: "/Blog",
+        icon: <ArrowForwardIosIcon />,
       },
       {
         text: "Conócenos",
         url: "/Conocenos",
+        icon: <ArrowForwardIosIcon />,
       },
       {
         text: "Contáctanos",
         url: "/Contactanos",
+        icon: <ArrowForwardIosIcon />,
       },
       {
         text: "Donaciones",
         url: "/Donar",
+        icon: <ArrowForwardIosIcon />,
       },
     ],
   },
@@ -54,18 +63,22 @@ const dataFooter = [
       {
         text: "Políticas de Privacidad",
         url: "https://www.google.com",
+        icon: <ArrowForwardIosIcon />,
       },
       {
         text: "Reglamento Interno",
         url: "https://www.google.com",
+        icon: <ArrowForwardIosIcon />,
       },
       {
         text: "Preguntas Frecuentes",
         url: "https://www.google.com",
+        icon: <ArrowForwardIosIcon />,
       },
       {
         text: "Únete al voluntariado",
         url: "https://www.google.com",
+        icon: <ArrowForwardIosIcon />,
       },
     ],
   },
@@ -73,7 +86,7 @@ const dataFooter = [
     title: "Nuestra App",
     items: [
       {
-        text: "Políticas de Privacidad",
+        icon: GooglePlayIcon,
         url: "https://www.google.com",
       },
     ],
