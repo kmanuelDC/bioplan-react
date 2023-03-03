@@ -1,0 +1,43 @@
+.container-lista-footer {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 25px;
+  padding: 20px;
+  max-width: 300px;
+  width: 100%;
+}
+
+.container-lista-footer .container-li {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.container-lista-footer .link-footer {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.container-lista-footer .link-footer:hover {
+  color: var(--orange-color);
+}
+
+.container-lista-footer .link-footer:focus,
+.link-footer:active {
+  color: darkorange;
+}
+
+.container-lista-footer .link-footer svg {
+  font-size: 20px;
+}
+
+.container-lista-footer .link-footer .img-googlePlay {
+  max-width: 200px;
+}
