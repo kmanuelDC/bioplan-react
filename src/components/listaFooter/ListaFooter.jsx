@@ -1,5 +1,5 @@
 import { Box, Typography } from "@mui/material";
-import { Link } from "@mui/material";
+import { Link, CardMedia } from "@mui/material";
 import { Link as RouterLink } from "react-router-dom";
 import "./listaFooter.css";
 const ListaFooter = ({ title, itemList }) => {
@@ -17,7 +17,8 @@ const ListaFooter = ({ title, itemList }) => {
                 to={item.url}
                 className="link-footer"
               >
-                {item.icon && item.icon}
+                {item.icon}
+                {<img src={item.image} className="img-googlePlay" />}
                 {item.text}
               </Link>
             </li>

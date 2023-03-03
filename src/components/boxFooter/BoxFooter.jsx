@@ -86,7 +86,7 @@ const dataFooter = [
     title: "Nuestra App",
     items: [
       {
-        icon: GooglePlayIcon,
+        image: GooglePlayIcon,
         url: "https://www.google.com",
       },
     ],
