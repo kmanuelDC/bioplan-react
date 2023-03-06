@@ -2,7 +2,7 @@
   background: var(--green-color-third);
   display: flex;
   justify-content: space-evenly;
-  padding: 50px 15px;
+  padding: 4rem 2rem;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 2rem;
 }

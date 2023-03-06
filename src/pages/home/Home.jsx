@@ -5,6 +5,8 @@ import "./home.css";
 import CardMedia from "@mui/material/CardMedia";
 import { Link, Typography, Box, Button } from "@mui/material";
 import PlayCircleOutlineIcon from "@mui/icons-material/PlayCircleOutline";
+import { Link as RouterLink } from "react-router-dom";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
 export const Home = memo(() => {
   return (
@@ -23,8 +25,8 @@ export const Home = memo(() => {
             />
           </Link>
           <Box>
-            <Typography variant="h4" color="">
-              Somos BIOPLAN Proyecta!
+            <Typography variant="h3" color="">
+              ¡Somos BIOPLAN Proyecta!
             </Typography>
             <Typography variant="body2" color="">
               Una organización comprometida a generar desarrollo y bienestar
@@ -36,7 +38,15 @@ export const Home = memo(() => {
           </Button>
         </section>
         <section className="section-cards">
+          <Typography variant="h2" color="" className="title-blog">
+            BLOG
+          </Typography>
           <CardContainer />
+          <Link component={RouterLink} to="/Blog" className="link-blogs">
+              Ver mas blogs
+              <ArrowForwardIosIcon />
+              <ArrowForwardIosIcon />
+          </Link>
         </section>
       </div>
     </>

@@ -63,6 +63,7 @@ a .icon {
 .container-button .navbar-button {
   border-bottom: solid 2px transparent;
   border-radius: 0;
+  font-size: 0.9rem;
 }
 .container-button .navbar-button:hover {
   color: white;

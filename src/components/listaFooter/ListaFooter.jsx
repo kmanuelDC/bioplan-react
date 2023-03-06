@@ -10,8 +10,8 @@ const ListaFooter = ({ title, itemList }) => {
           {title}
         </Typography>
         <ul className="container-li">
-          {itemList.map((item) => (
-            <li className="" key={item.text}>
+          {itemList.map((item, i) => (
+            <li className="" key={i}>
               <Link
                 component={RouterLink}
                 to={item.url}
