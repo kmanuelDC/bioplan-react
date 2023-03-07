@@ -1,4 +1,4 @@
-import BoxForm from "../../components/BoxForm/BoxForm";
+import { BoxForm } from "../../components";
 import "./styles.css";
 
 export const ContactUs = () => {
