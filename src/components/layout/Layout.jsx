@@ -12,13 +12,9 @@ const Layout = () => {
       <main className="">
         <Outlet />
       </main>
-<<<<<<< HEAD
-      <footer></footer>
-=======
       <footer>
         <BoxFooter />
       </footer>
->>>>>>> 4a889de13b6f812df0f2bc9d39455fd8068a2462
     </>
   );
 };
