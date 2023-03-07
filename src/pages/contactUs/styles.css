@@ -1,0 +1,12 @@
+.page-contactUs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-formulario {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}

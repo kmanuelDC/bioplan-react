@@ -1,1 +1,1 @@
-export { ContactUs } from "./ContactUs.js";
+export { ContactUs } from "./ContactUs.jsx";
