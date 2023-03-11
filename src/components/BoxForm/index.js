@@ -1,1 +1,1 @@
-export { default as BoxForm } from "./BoxForm";
+export { default as BoxForm } from "./BoxForm.jsx";

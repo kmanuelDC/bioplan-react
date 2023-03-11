@@ -10,3 +10,25 @@
   display: flex;
   justify-content: center;
 }
+
+.section-title{
+  width: 100%;
+
+  background-color: #45a0498b;
+  height: 80px;
+  text-align: center;
+
+  padding: 12px 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(5, 54, 5);
+}
+
+#titulo, .siPregunta{   
+  height: 20px;
+  text-align: center;
+
+  padding: 12px 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: rgb(5, 54, 5);
+  margin-bottom: 20px;
+}
