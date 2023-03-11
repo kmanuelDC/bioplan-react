@@ -1,0 +1,109 @@
+/* start navbar top */
+
+.navbar-top-container {
+  background-color: var(--white-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 22px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.navbar-top-container .LogoBioplan {
+  width: 150px;
+}
+.img-logoBioplan .LogoBioplan {
+  width: 100px;
+}
+@media only screen and (max-width: 662px) {
+  .navbar-top-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.navbar-top-container .container-icons {
+  display: flex;
+  align-items: center;
+}
+.container-icons .buttonStyle {
+  background-color: var(--orange-color);
+}
+.container-icons .buttonStyle:hover,
+.buttonStyle:focus {
+  background-color: darkorange;
+  color: white;
+}
+
+.container-icons .icon {
+  margin-right: 15px;
+}
+
+a .icon {
+  width: 20px;
+}
+/* end navbar top */
+
+/* start navbar bot */
+
+.navbar-bot-container .container-button {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--green-color-third);
+}
+
+.navbar-bot-responsive {
+  display: none;
+}
+
+/* end navbar bot */
+
+/* start buttons of navbar */
+.container-button .navbar-button {
+  border-bottom: solid 2px transparent;
+  border-radius: 0;
+  font-size: 0.9rem;
+}
+.container-button .navbar-button:hover {
+  color: white;
+  background: transparent;
+}
+
+.container-button .navbar-button::before {
+  background: darkorange;
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 2px;
+  width: 0;
+  display: block;
+  bottom: -2px;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+.navbar-button:hover::before {
+  width: 100%;
+  background: var(--orange-color);
+}
+.container-button .navbar-button:focus {
+  color: white;
+  border-bottom: solid 2.75px darkorange;
+}
+
+/* end buttons of navbar */
+
+/* estart navbar bot responsive */
+@media only screen and (max-width: 750px) {
+  .navbar-bot-container,
+  .navbar-top-container {
+    display: none;
+  }
+  .navbar-bot-responsive {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -50px;
+  }
+}
+/* end navbar bot responsive*/

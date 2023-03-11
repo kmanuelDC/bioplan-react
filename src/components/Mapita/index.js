@@ -1,0 +1,1 @@
+export { default as Mapita } from "./Mapita.jsx";

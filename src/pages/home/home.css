@@ -1,0 +1,57 @@
+:root {
+  /* colors palete */
+  --orange-color: #f37835;
+  --orange-color-first: darkorange;
+  --white-color: #fefefe;
+
+  /* green Colors */
+  --green-color-first: #66bf5b;
+  --green-color-second: #038b81;
+  --green-color-third: #136734;
+
+  /* fonts */
+}
+
+/* start section-carousel */
+/* end section-carousel */
+
+/* start section-presentacion */
+.page-home .section-presentacion {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 4rem;
+  text-align: center;
+  border-top: solid 0.1rem;
+  border-bottom: solid 0.1rem;
+  padding: 4rem;
+}
+/* end section-presentacion */
+
+/* start section section-cards */
+.page-home .section-cards {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-cards .title-blog {
+  align-self: self-start;
+  font-size: 2rem;
+  margin: 5rem 0 3rem 9rem;
+  color: var(--orange-color);
+  border-bottom: solid var(--orange-color);
+}
+
+.section-cards .link-blogs {
+  font-size: 0.9rem;
+  margin: 7rem 0;
+  color: var(--green-color-second);
+}
+
+.section-cards .link-blogs svg {
+  font-size: 0.9rem;
+}
+/* end section section-cards */
