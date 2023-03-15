@@ -4,6 +4,9 @@ import Image_Mision from "../../assets/images/image-Mision.jpg";
 import Typography from "@mui/material/Typography";
 import { Box } from "@mui/material";
 import Photo1 from "../../assets/photos/photo1.jpg";
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import * as ColaboradorAction from '../../store/actions/colaboradorAction';
 const dataMisionVision = [
   {
     title: "Misión",
@@ -40,6 +43,13 @@ const dataCardPhotography = [
   },
 ];
 export const KnowUs = () => {
+   const dispatch = useDispatch();
+
+   useEffect(() => {
+     dispatch(ColaboradorAction.getColaboradores())
+   }, [])
+   
+
   return (
     <>
       <div className="page-conocenos">
