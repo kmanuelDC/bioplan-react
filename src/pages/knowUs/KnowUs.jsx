@@ -5,7 +5,7 @@ import Typography from "@mui/material/Typography";
 import { Box } from "@mui/material";
 import Photo1 from "../../assets/photos/photo1.jpg";
 import { useEffect } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import * as ColaboradorAction from '../../store/actions/colaboradorAction';
 const dataMisionVision = [
   {
@@ -44,10 +44,16 @@ const dataCardPhotography = [
 ];
 export const KnowUs = () => {
    const dispatch = useDispatch();
+   const {colaboradores } = useSelector((state)=>state.colaboradores)
 
    useEffect(() => {
      dispatch(ColaboradorAction.getColaboradores())
-   }, [])
+   }, [dispatch])
+
+   useEffect(() => {
+    console.log(colaboradores)
+  }, [colaboradores])
+
    
 
   return (
