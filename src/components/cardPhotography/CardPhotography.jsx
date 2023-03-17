@@ -1,4 +1,4 @@
-import { Box, Typography, Card, CardMedia, CardContent } from "@mui/material";
+import { Box, Typography, CardMedia, CardContent } from "@mui/material";
 import "./cardPhotography.css";
 
 const CardPhotography = ({ photo, name, position }) => {
