@@ -2,6 +2,8 @@ import { Box, Typography } from "@mui/material";
 import { Link } from "@mui/material";
 import { Link as RouterLink } from "react-router-dom";
 import "./listaFooter.css";
+
+
 const ListaFooter = ({ title, itemList }) => {
   return (
     <>

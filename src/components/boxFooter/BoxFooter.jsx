@@ -97,7 +97,7 @@ const BoxFooter = () => {
   return (
     <>
       <Box className="footer">
-        {dataFooter.map((item) => (
+        {dataFooter?.map((item) => (
           <ListaFooter
             title={item.title}
             itemList={item.items}

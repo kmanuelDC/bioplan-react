@@ -1,6 +1,6 @@
-import CONSTANTS from '../../constants/consumerConst';
-import { ConsumerAPI } from '../../consumer/consumer';
-import TYPES from '../types/types';
+import CONSTANTS from '../../../constants/consumerConst';
+import { ConsumerAPI } from '../../../consumer/consumer';
+import TYPES from '../../types/types';
 
 export const getColaboradores = () => {
     return async (dispatch) => {

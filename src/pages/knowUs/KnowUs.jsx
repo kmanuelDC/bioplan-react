@@ -1,3 +1,4 @@
+import React,{useState} from "react";
 import { CardPhotography, MisionVision } from "../../components";
 import "./styles.css";
 import Image_Mision from "../../assets/images/image-Mision.jpg";
@@ -6,7 +7,7 @@ import { Box } from "@mui/material";
 import Photo1 from "../../assets/photos/photo1.jpg";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import * as ColaboradorAction from '../../store/actions/colaboradorAction';
+import * as ColaboradorAction from '../../store/actions/colaboradores/colaboradorAction';
 const dataMisionVision = [
   {
     title: "Misión",
@@ -42,17 +43,39 @@ const dataCardPhotography = [
     position: "Manager",
   },
 ];
+
+
 export const KnowUs = () => {
    const dispatch = useDispatch();
    const {colaboradores } = useSelector((state)=>state.colaboradores)
+   const [listColaboradores, setListColaboradores] = useState([...dataCardPhotography])
+
+   const [conejo, setConejo] = useState('pascual');
+
 
    useEffect(() => {
      dispatch(ColaboradorAction.getColaboradores())
    }, [dispatch])
 
    useEffect(() => {
-    console.log(colaboradores)
-  }, [colaboradores])
+    //console.log(colaboradores)
+    //setListColaboradores([...colaboradores])
+    let name = 'name';
+    setListColaboradores([...dataCardPhotography].map((x,i)=>{return {...x,[name]:colaboradores[i]?.nombre_eq}}))
+    setConejo('Gabriel')
+  }, [colaboradores]);
+
+  useEffect(() => {
+    console.log(conejo)
+  }, [conejo]);
+
+
+
+
+
+
+
+
 
    
 
@@ -108,7 +131,7 @@ export const KnowUs = () => {
             Nuestro Equipo
           </Typography>
           <Box className="container-workers">
-            {dataCardPhotography.map((item) => {
+            {listColaboradores?.map((item) => {
               return (
                 <CardPhotography
                   photo={item.photo}
