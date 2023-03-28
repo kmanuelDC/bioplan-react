@@ -13,3 +13,14 @@ export const getNoticias = () => {
         };
     }
 }
+export const getNoticiasById = (id) => {
+    return async (dispatch) => {
+        try {
+            const res = await ConsumerAPI(`/bioplan/noticias/get/:${id}`, CONSTANTS.HTTP.GET, {});
+            //console.log(res)
+            dispatch({ type: TYPES.noticiasGetById, payload: res.data });
+        } catch (err) {
+            console.log('Profile actions:', err);
+        };
+    }
+}

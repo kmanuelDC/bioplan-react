@@ -2,24 +2,24 @@ import CONSTANTS from '../../../constants/consumerConst';
 import { ConsumerAPI } from '../../../consumer/consumer';
 import TYPES from '../../types/types';
 
-export const getColaboradores = () => {
+export const getContactos = () => {
     return async (dispatch) => {
         try {
-            const res = await ConsumerAPI(`/bioplan/colaboradores/get/all`, CONSTANTS.HTTP.GET, {});
+            const res = await ConsumerAPI(`/bioplan/contactos/get/all`, CONSTANTS.HTTP.GET, {});
             //console.log(res)
-            dispatch({ type: TYPES.colaboradoresGetList, payload: res.data });
+            dispatch({ type: TYPES.contactosGetList, payload: res.data });
         } catch (err) {
             console.log('Profile actions:', err);
         };
     }
 }
 
-export const getColaboradorById = (id) => {
+export const getContactoById = (id) => {
     return async (dispatch) => {
         try {
-            const res = await ConsumerAPI(`/bioplan/colaboradores/get/:${id}`, CONSTANTS.HTTP.GET, {});
+            const res = await ConsumerAPI(`/bioplan/contactos/get/:${id}`, CONSTANTS.HTTP.GET, {});
             //console.log(res)
-            dispatch({ type: TYPES.colaboradoresGetById, payload: res.data });
+            dispatch({ type: TYPES.contactosGetById, payload: res.data });
         } catch (err) {
             console.log('Profile actions:', err);
         };

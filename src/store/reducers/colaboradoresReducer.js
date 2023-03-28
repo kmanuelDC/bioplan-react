@@ -12,7 +12,7 @@ export const colaboradoresReducer = (state = initialState, { type, payload }) =>
                 ...state,
                 colaboradores: payload
             }
-        case TYPES.colaboradorid:
+        case TYPES.colaboradoresGetById:
             return {
                  ...state,
                 coladoradorid: payload
