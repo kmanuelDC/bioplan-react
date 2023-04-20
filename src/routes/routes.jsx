@@ -6,9 +6,11 @@ import {
   Donate,
   Home,
   KnowUs,
+  Login,
   Projects,
 } from "../pages";
 import { Layout } from "../components";
+import BackendInterfaz from "../pages/backendInterfaz/BackendInterfaz";
 
 export const router = createBrowserRouter([
   {
@@ -43,10 +45,17 @@ export const router = createBrowserRouter([
         path: "/Donar",
         element: <Donate />,
       },
+      
       {
         path: "*",
         element: <Navigate to="/" replace />,
       },
     ],
+  },
+  {path:"/Backend",
+  element: <Login/>,
+  children: [
+    {path: "/Interfaz", element: <BackendInterfaz/>}
+  ],
   },
 ]);

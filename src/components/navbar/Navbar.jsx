@@ -28,6 +28,8 @@ import InfoIcon from "@mui/icons-material/Info";
 import InboxIcon from "@mui/icons-material/Inbox";
 import CampaignIcon from "@mui/icons-material/Campaign";
 import { Link as RouterLink } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+
 
 const drawerWidth = 240;
 
@@ -123,6 +125,11 @@ const Navbar = () => {
   const handleDrawerClose = () => {
     setOpen(false);
   };
+  const handleClick = () => {
+    navigate("/IniciarSesion/withoutLayout");
+  };
+  const navigate = useNavigate();
+
   return (
     <>
       <header className="header">
@@ -133,6 +140,15 @@ const Navbar = () => {
             </Button>
           </div>
           <div className="container-icons">
+            <Button
+              className="buttonStyle icon"
+              variant="contained"
+              component={RouterLink}
+              to="/Backend"
+              
+            >
+              Iniciar Sesión
+            </Button>
             <Button
               className="buttonStyle icon"
               variant="contained"

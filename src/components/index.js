@@ -9,3 +9,5 @@ export { MisionVision } from "./misionVision";
 export { CardPhotography } from "./cardPhotography";
 export { ListaFooter } from "./listaFooter";
 export { BoxFooter } from "./boxFooter";
+export { Input } from "./common";
+ 

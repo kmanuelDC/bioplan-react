@@ -5,3 +5,5 @@ export { Donate } from "./donate";
 export { Home } from "./home";
 export { KnowUs } from "./knowUs";
 export { Projects } from "./projects";
+export { Login } from "./Login";
+ 

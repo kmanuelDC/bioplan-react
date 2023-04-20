@@ -1,0 +1,56 @@
+.container_input {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .container_input input {
+    width: 100%;
+    max-width: 38.125rem;
+    height: 4.375rem;
+    border-radius: 1.25rem;
+    border: none;
+    outline: none;
+    background-color: rgba(217, 217, 217, 0.4);
+    padding: 0 1.5rem;
+    font-size: 0.8rem;
+    color: #000000;
+    position: relative;
+  }
+  
+  .container_input label,
+  .container_input span {
+    position: absolute;
+    padding: 0 1.5rem;
+    color: #bababa;
+    transition: 0.5s;
+  }
+  
+  .container_input span svg{
+    width: 1.25rem;
+    height: 1.5625rem;
+    font-size: 1.5625rem;
+
+  }
+  .container_input span{
+    right: 0;
+  }
+ 
+  
+  /* animation */
+  
+  .container_input input:focus,
+  .container_input input:valid {
+    border-color: #00bcd4;
+  }
+  
+  .container_input.focused label,
+  .container_input.filled label {
+    top: 0.6rem;
+    font-size: 0.75rem;
+  }
+  
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+  
