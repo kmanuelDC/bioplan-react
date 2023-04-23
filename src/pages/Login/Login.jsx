@@ -35,7 +35,7 @@ const Login = () => {
               variant="contained"
               size="large"
               component={RouterLink}
-              to="/Backend/Interfaz"
+              to="/Administracion"
             >
               INICIAR SESION
             </Button>

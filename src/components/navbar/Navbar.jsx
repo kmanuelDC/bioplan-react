@@ -28,8 +28,6 @@ import InfoIcon from "@mui/icons-material/Info";
 import InboxIcon from "@mui/icons-material/Inbox";
 import CampaignIcon from "@mui/icons-material/Campaign";
 import { Link as RouterLink } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
-
 
 const drawerWidth = 240;
 
@@ -125,10 +123,6 @@ const Navbar = () => {
   const handleDrawerClose = () => {
     setOpen(false);
   };
-  const handleClick = () => {
-    navigate("/IniciarSesion/withoutLayout");
-  };
-  const navigate = useNavigate();
 
   return (
     <>
@@ -145,7 +139,6 @@ const Navbar = () => {
               variant="contained"
               component={RouterLink}
               to="/Backend"
-              
             >
               Iniciar Sesión
             </Button>
@@ -157,6 +150,7 @@ const Navbar = () => {
             >
               DONAR
             </Button>
+
             <a
               href="https://www.facebook.com/Bioplan.proyecta/?locale=es_LA"
               target="_blank"
@@ -230,6 +224,14 @@ const Navbar = () => {
                 className="navbar-button"
               >
                 CONTÁCTANOS
+              </Button>
+              <Button
+                color="inherit"
+                component={RouterLink}
+                to="/Administracion"
+                className="navbar-button"
+              >
+                ADMINISTRACIÓN
               </Button>
             </Toolbar>
           </AppBar>

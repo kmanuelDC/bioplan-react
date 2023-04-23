@@ -1,0 +1,14 @@
+.container-actions .button-edit {
+  padding: 0.5rem;
+  min-width: 0;
+}
+
+.container-actions .button-delete {
+  padding: 0.5rem;
+  min-width: 0;
+  color: #8b0000;
+}
+
+.container-actions .css-1e6y48t-MuiButtonBase-root-MuiButton-root {
+  min-width: 0;
+}

@@ -10,7 +10,8 @@ import {
   Projects,
 } from "../pages";
 import { Layout } from "../components";
-import BackendInterfaz from "../pages/backendInterfaz/BackendInterfaz";
+import BackendInterfaz from "../pages/administration/Administration";
+import Administration from "../pages/administration/Administration";
 
 export const router = createBrowserRouter([
   {
@@ -45,17 +46,24 @@ export const router = createBrowserRouter([
         path: "/Donar",
         element: <Donate />,
       },
-      
+      {
+        path: "/Administracion",
+        element: <Administration />,
+      },
       {
         path: "*",
         element: <Navigate to="/" replace />,
       },
     ],
   },
-  {path:"/Backend",
-  element: <Login/>,
-  children: [
-    {path: "/Interfaz", element: <BackendInterfaz/>}
-  ],
+  {
+    path: "/Backend",
+    element: <Login />,
+    // children: [
+    //   {
+    //     path: "/Backend/Interfaz",
+    //     element: <BackendInterfaz />,
+    //   },
+    // ],
   },
 ]);
