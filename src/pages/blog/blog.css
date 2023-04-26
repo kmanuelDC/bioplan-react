@@ -1,5 +1,9 @@
 .blog {
   margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10rem;
 }
 .container_search {
   display: flex;
@@ -18,6 +22,7 @@
 }
 .Container_component-Blog-Main {
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 @media screen and (max-width: 750px) {

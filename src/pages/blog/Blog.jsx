@@ -4,12 +4,24 @@ import Input from "@mui/material/Input";
 import SearchIcon from "@mui/icons-material/Search";
 import { Button, Divider, Typography } from "@mui/material";
 import "./blog.css";
+import { useDispatch, useSelector } from "react-redux";
+import * as noticiasActions from "../../store/actions/noticias/noticiasAction";
+import { useEffect } from "react";
+
 
 export const Blog = () => {
-  const titulo = "Titulo";
-  const parrafo = "parrafo";
-  const nombre = "nombre";
-  const fecha = "01/02/2023";
+  const dispatch = useDispatch();
+  const { noticiaslist } = useSelector((state) => state.noticias);
+
+  useEffect(() => {
+    dispatch(noticiasActions.getNoticias());
+  }, [dispatch]);
+
+  useEffect(() => {
+    //dispatch(noticiasActions.getNoticias())
+    console.log(noticiaslist);
+  }, [noticiaslist]);
+
   return (
     <>
       <Box display="flex" justifyContent="center" className="blog">
@@ -33,12 +45,15 @@ export const Blog = () => {
             </Box>
           </Box>
           <Box className="Container_component-Blog-Main">
-            <ComponentBlog
-              titulo={titulo}
-              parrafo={parrafo}
-              nombre={nombre}
-              fecha={fecha}
-            />
+            {noticiaslist?.map((item,i) => (
+              <ComponentBlog
+                titulo={item.titulo}
+                parrafo={item.noticias_detalle}
+                nombre={item.autor}
+                fecha={item.fecha}
+                key={i}
+              />
+            ))}
             <Divider variant="fullWidth" orientation="vertical" />
           </Box>
         </Box>

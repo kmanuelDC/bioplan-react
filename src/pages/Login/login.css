@@ -1,0 +1,33 @@
+.page-Login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4rem 0;
+}
+.section-form_login .form_login{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem;
+    width: 35rem;
+}
+
+.section-form_login .title-iniciarSesion{
+    font-size: 4rem;
+    align-self: center;
+    font-weight: 500;
+}
+
+.section-form_login .form_login svg:nth-child(2){
+    align-self: center;
+    font-size: 10rem;
+    color: #038b81;
+}
+.section-form_login .button_login{
+    width: 15rem;
+    text-align: center;
+    align-self: center;
+    border-radius: 2rem;
+    padding: 0.7rem 0.7rem;
+}
+

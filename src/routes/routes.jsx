@@ -6,9 +6,12 @@ import {
   Donate,
   Home,
   KnowUs,
+  Login,
   Projects,
 } from "../pages";
 import { Layout } from "../components";
+import BackendInterfaz from "../pages/administration/Administration";
+import Administration from "../pages/administration/Administration";
 
 export const router = createBrowserRouter([
   {
@@ -44,9 +47,27 @@ export const router = createBrowserRouter([
         element: <Donate />,
       },
       {
+        path: "/Administracion",
+        element: <Administration />,
+      },
+      {
         path: "*",
         element: <Navigate to="/" replace />,
       },
     ],
   },
+<<<<<<< HEAD:src/routes/routes.js
 ]);
+=======
+  {
+    path: "/Backend",
+    element: <Login />,
+    // children: [
+    //   {
+    //     path: "/Backend/Interfaz",
+    //     element: <BackendInterfaz />,
+    //   },
+    // ],
+  },
+]);
+>>>>>>> 0bafaf76a4ef4b8781623174175a6862ff130264:src/routes/routes.jsx

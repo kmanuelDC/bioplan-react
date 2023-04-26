@@ -1,0 +1,14 @@
+.page-proyectos{
+    width: 100vw;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem 0 5rem 0;
+    gap: 5rem;
+}
+.page-proyectos .section-proyectos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}

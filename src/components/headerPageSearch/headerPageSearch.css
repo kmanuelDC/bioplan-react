@@ -1,0 +1,28 @@
+.container_search {
+  display: flex;
+  align-items: center;
+  width: 350px;
+}
+
+.Container_component-Blog-Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  gap: 22px;
+  width: 70%;
+}
+
+@media screen and (max-width: 750px) {
+    .Container_component-Blog-Header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+    }
+    .container_search {
+      position: relative;
+      left: 20px;
+    }
+  }

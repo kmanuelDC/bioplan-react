@@ -123,6 +123,7 @@ const Navbar = () => {
   const handleDrawerClose = () => {
     setOpen(false);
   };
+
   return (
     <>
       <header className="header">
@@ -137,10 +138,19 @@ const Navbar = () => {
               className="buttonStyle icon"
               variant="contained"
               component={RouterLink}
+              to="/Backend"
+            >
+              Iniciar Sesión
+            </Button>
+            <Button
+              className="buttonStyle icon"
+              variant="contained"
+              component={RouterLink}
               to="/Donar"
             >
               DONAR
             </Button>
+
             <a
               href="https://www.facebook.com/Bioplan.proyecta/?locale=es_LA"
               target="_blank"
@@ -214,6 +224,14 @@ const Navbar = () => {
                 className="navbar-button"
               >
                 CONTÁCTANOS
+              </Button>
+              <Button
+                color="inherit"
+                component={RouterLink}
+                to="/Administracion"
+                className="navbar-button"
+              >
+                ADMINISTRACIÓN
               </Button>
             </Toolbar>
           </AppBar>

@@ -2,6 +2,7 @@ import TYPES from '../types/types';
 
 let initialState = {
     colaboradores: [],
+    colaboradorid: 0
 }
 
 export const colaboradoresReducer = (state = initialState, { type, payload }) => {
@@ -11,6 +12,11 @@ export const colaboradoresReducer = (state = initialState, { type, payload }) =>
                 ...state,
                 colaboradores: payload
             }
+        case TYPES.colaboradoresGetById:
+            return {
+                 ...state,
+                coladoradorid: payload
+                }
         default:
             return state;
     }
